@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elvoin Bakes - Fresh • Creative • Delicious</title>
+    <link rel="icon" type="image/png" href="https://nait-afk.github.io/check/Screenshot%202025-11-17%20163828.png">
+    <link rel="apple-touch-icon" href="https://nait-afk.github.io/check/Screenshot%202025-11-17%20163828.png">
+    <link rel="mask-icon" href="https://nait-afk.github.io/check/Screenshot%202025-11-17%20163828.png" color="#800020">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="https://nait-afk.github.io/check/Screenshot%202025-11-17%20163828.png" alt="Elvoin Bakes Logo">
+                <span>Elvoin Bakes</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html" class="btn-order">Order Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="floating-elements">
+            <div class="float-item cupcake"><i class="fas fa-cupcake"></i></div>
+            <div class="float-item cookie"><i class="fas fa-cookie"></i></div>
+            <div class="float-item cake"><i class="fas fa-birthday-cake"></i></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="fade-in">Welcome to Elvoin Bakes</h1>
+            <p class="hero-subtitle fade-in-delay">Fresh • Creative • Delicious</p>
+            <p class="hero-text fade-in-delay-2">Discover premium handcrafted cakes, pastries, and baked treats made with love.</p>
+            <div class="hero-buttons fade-in-delay-3">
+                <a href="order.html" class="btn btn-primary">Order Now</a>
+                <a href="about.html" class="btn btn-secondary">Step Into Elvoin</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        
+        <!-- Floating Message Icon -->
+        <div class="floating-message-icon" id="floatingMessage">
+            <div class="message-icon-circle">
+                <i class="fas fa-comment-dots"></i>
+            </div>
+            <div class="message-popup" id="messagePopup">
+                <a href="tel:+251911129785" class="popup-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+251 911129785</span>
+                </a>
+                <a href="https://t.me/elvoinbakes" target="_blank" class="popup-item">
+                    <i class="fab fa-telegram"></i>
+                    <span>Telegram</span>
+                </a>
+                <a href="https://www.tiktok.com/@elvionbakes" target="_blank" class="popup-item">
+                    <i class="fab fa-tiktok"></i>
+                    <span>@elvionbakes</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose <span class="highlight">Elvoin</span></h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-check"><i class="fas fa-check"></i></div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>We use only the finest, freshest ingredients sourced locally</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-check"><i class="fas fa-check"></i></div>
+                    <h3>Skilled Pastry Chefs</h3>
+                    <p>Our expert bakers bring years of experience and passion</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-check"><i class="fas fa-check"></i></div>
+                    <h3>Creative Cake Designs</h3>
+                    <p>Custom designs tailored to your unique vision</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-check"><i class="fas fa-check"></i></div>
+                    <h3>On-Time Delivery</h3>
+                    <p>Reliable delivery service ensuring freshness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview Section -->
+    <section class="gallery-preview">
+        <div class="container-full">
+            <h2 class="section-title">Our <span class="highlight">Gallery</span></h2>
+            <p class="section-subtitle">Explore our delicious creations</p>
+            
+            <div class="gallery-carousel-wrapper">
+                <div class="gallery-carousel" id="galleryCarousel">
+                    <div class="gallery-slide">
+                        <img src="https://nait-afk.github.io/check/C1%20(1).jpg" alt="Elegant Wedding Cake" style="object-fit: contain; background: #fff5f0;">
+                        <p>Elegant Wedding Cake</p>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://nait-afk.github.io/check/C1%20(2).jpg" alt="Custom Celebration Cake" style="object-fit: contain; background: #fff5f0;">
+                        <p>Custom Celebration Cake</p>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://nait-afk.github.io/check/C1%20(7).jpg" alt="Dessert Creation" style="object-fit: contain; background: #fff5f0;">
+                        <p>Dessert Creation</p>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://nait-afk.github.io/check/C1%20(8).jpg" alt="Custom Layer Cake" style="object-fit: contain; background: #fff5f0;">
+                        <p>Custom Layer Cake</p>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://nait-afk.github.io/check/C1%20(9).jpg" alt="Decorated Cake" style="object-fit: contain; background: #fff5f0;">
+                        <p>Decorated Cake</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-dots" id="galleryDots"></div>
+
+            <div class="gallery-cta">
+                <a href="gallery.html" class="btn btn-primary">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="cta-overlay"></div>
+        <div class="cta-content">
+            <h2>Ready to Order Your Dream Cake?</h2>
+            <p>Let us create something special for your next celebration</p>
+            <a href="order.html" class="btn btn-glow">Request a Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3><i class="fas fa-birthday-cake"></i> Elvoin Bakes</h3>
+                    <p>Creating sweet memories since 2025. Premium handcrafted cakes and pastries made with love in Addis Ababa, Ethiopia.</p>
+                    <p><a href="https://maps.google.com/?q=Addis+Ababa+Ethiopia" target="_blank" class="footer-link"><i class="fas fa-map-marker-alt"></i> Addis Ababa, Ethiopia</a></p>
+                    <p><a href="tel:+251911129785" class="footer-link"><i class="fas fa-phone"></i> +251 911129785</a></p>
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@elvionbakes" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://t.me/elvoinbakes" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Info</h4>
+                    <ul>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+
+                        <li><a href="order.html">Place Order</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <p>Follow us on TikTok for daily baking inspiration and special offers</p>
+                    <a href="https://www.tiktok.com/@elvionbakes" target="_blank" class="tiktok-btn">
+                        <i class="fab fa-tiktok"></i> Follow @elvionbakes
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elvoin Bakes. All rights reserved. | <span class="designer-link">DESIGNED BY <a href="tel:+251901706471" class="designer-link">NAOL</a> | PHONE: <a href="tel:+251901706471" class="designer-link">+251 901 706471</a></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

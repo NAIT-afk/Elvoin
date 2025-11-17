@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Elvoin Bakes</title>
+    <link rel="icon" type="image/png" href="https://nait-afk.github.io/check/Screenshot%202025-11-17%20163828.png">
+    <link rel="apple-touch-icon" href="https://nait-afk.github.io/check/Screenshot%202025-11-17%20163828.png">
+    <link rel="mask-icon" href="https://nait-afk.github.io/check/Screenshot%202025-11-17%20163828.png" color="#800020">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="https://nait-afk.github.io/check/Screenshot%202025-11-17%20163828.png" alt="Elvoin Bakes Logo">
+                <span>Elvoin Bakes</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html" class="active">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html" class="btn-order">Order Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Share Your Experience</h1>
+        <p>We'd Love to Hear From You</p>
+    </section>
+
+    <!-- Review Form Section -->
+    <section class="review-form-section">
+        <div class="container">
+            <div class="review-form-wrapper">
+                <div class="review-intro">
+                    <h2>Leave a Review</h2>
+                    <p>Your feedback helps us improve and lets others know about your experience with Elvoin Bakes. Share your thoughts about our products and service!</p>
+                </div>
+
+                <form class="review-form" id="reviewForm" action="https://formspree.io/f/xkgverro" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="review-name">Your Name *</label>
+                            <input type="text" id="review-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="review-email">Email *</label>
+                            <input type="email" id="review-email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="review-product">Product/Service *</label>
+                        <select id="review-product" name="product" required>
+                            <option value="">Select what you ordered</option>
+                            <option value="custom-cake">Custom Cake</option>
+                            <option value="wedding-cake">Wedding Cake</option>
+                            <option value="birthday-cake">Birthday Cake</option>
+                            <option value="cupcakes">Cupcakes</option>
+                            <option value="pastries">Pastries</option>
+                            <option value="cookies">Cookies</option>
+                            <option value="bread">Bread</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Rating *</label>
+                        <div class="star-rating">
+                            <input type="radio" id="star5" name="rating" value="5" required>
+                            <label for="star5"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2"><i class="fas fa-star"></i></label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1"><i class="fas fa-star"></i></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="review-message">Your Review *</label>
+                        <textarea id="review-message" name="message" rows="6" placeholder="Tell us about your experience..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <i class="fas fa-paper-plane"></i> Submit Review
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Message Icon -->
+    <div class="floating-message-icon" id="floatingMessage">
+        <div class="message-icon-circle">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+        <div class="message-popup" id="messagePopup">
+            <a href="tel:+251911129785" class="popup-item">
+                <i class="fas fa-phone"></i>
+                <span>+251 911129785</span>
+            </a>
+            <a href="https://t.me/elvoinbakes" target="_blank" class="popup-item">
+                <i class="fab fa-telegram"></i>
+                <span>Telegram</span>
+            </a>
+            <a href="https://www.tiktok.com/@elvionbakes" target="_blank" class="popup-item">
+                <i class="fab fa-tiktok"></i>
+                <span>@elvionbakes</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3><i class="fas fa-birthday-cake"></i> Elvoin Bakes</h3>
+                    <p>Creating sweet memories since 2025. Premium handcrafted cakes and pastries made with love in Addis Ababa, Ethiopia.</p>
+                    <p><a href="https://maps.google.com/?q=Addis+Ababa+Ethiopia" target="_blank" class="footer-link"><i class="fas fa-map-marker-alt"></i> Addis Ababa, Ethiopia</a></p>
+                    <p><a href="tel:+251911129785" class="footer-link"><i class="fas fa-phone"></i> +251 911129785</a></p>
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@elvionbakes" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://t.me/elvoinbakes" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Info</h4>
+                    <ul>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+
+                        <li><a href="order.html">Place Order</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for special offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elvoin Bakes. All rights reserved. | <span class="designer-link">DESIGNED BY <a href="tel:+251901706471" class="designer-link">NAOL</a> | PHONE: <a href="tel:+251901706471" class="designer-link">+251 901 706471</a></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

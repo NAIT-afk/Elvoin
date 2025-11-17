@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - Elvoin Bakes</title>
+    <link rel="icon" type="image/png" href="https://nait-afk.github.io/check/Screenshot%202025-11-17%20163828.png">
+    <link rel="apple-touch-icon" href="https://nait-afk.github.io/check/Screenshot%202025-11-17%20163828.png">
+    <link rel="mask-icon" href="https://nait-afk.github.io/check/Screenshot%202025-11-17%20163828.png" color="#800020">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="https://nait-afk.github.io/check/Screenshot%202025-11-17%20163828.png" alt="Elvoin Bakes Logo">
+                <span>Elvoin Bakes</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html" class="btn-order active">Order Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Place Your Order</h1>
+        <p>Let's Create Something Sweet Together</p>
+    </section>
+
+    <!-- Order Form -->
+    <section class="order-section">
+        <div class="container">
+            <div class="order-wrapper">
+                <div class="order-info">
+                    <h2>How to Order</h2>
+                    <div class="info-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Fill Out the Form</h4>
+                            <p>Provide details about your order including type, size, and preferences</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Get a Quote</h4>
+                            <p>We'll review your request and send you a detailed quote within 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Confirm & Pay</h4>
+                            <p>Approve the design and make a deposit to secure your order</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Enjoy!</h4>
+                            <p>Pick up or receive delivery of your beautiful creation</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-options">
+                        <h3>Prefer to Call?</h3>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+251911129785" style="color: var(--secondary-maroon);">+251 911129785</a></p>
+                        <p><i class="fab fa-telegram"></i> Telegram: <a href="https://t.me/elvoinbakes" target="_blank" style="color: var(--secondary-maroon);">@elvoinbakes</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q=Addis+Ababa+Ethiopia" target="_blank" style="color: var(--secondary-maroon);">Addis Ababa, Ethiopia</a></p>
+                    </div>
+                </div>
+
+                <div class="order-form-container">
+                    <form class="order-form" id="orderForm" action="https://formspree.io/f/xkgverro" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="product-type">Product Type *</label>
+                            <select id="product-type" name="product-type" required>
+                                <option value="">Select a product</option>
+                                <option value="custom-cake">Custom Cake</option>
+                                <option value="wedding-cake">Wedding Cake</option>
+                                <option value="birthday-cake">Birthday Cake</option>
+                                <option value="cupcakes">Cupcakes</option>
+                                <option value="pastries">Pastries</option>
+                                <option value="cookies">Cookies</option>
+                                <option value="dessert-table">Dessert Table</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cake-size">Cake Size *</label>
+                                <select id="cake-size" name="cake-size" required>
+                                    <option value="">Select size</option>
+                                    <option value="1kg">1 Kg</option>
+                                    <option value="2kg">2 Kg</option>
+                                    <option value="3kg">3 Kg</option>
+                                    <option value="4kg+">4 Kg+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="event-date">Event Date *</label>
+                                <input type="date" id="event-date" name="event-date" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="delivery">Delivery Method *</label>
+                            <select id="delivery" name="delivery" required>
+                                <option value="">Select delivery method</option>
+                                <option value="pickup">Pickup</option>
+                                <option value="delivery">Delivery</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Special Requests / Design Details</label>
+                            <textarea id="notes" name="notes" rows="5" placeholder="Tell us about your vision, theme, colors, decorations, dietary restrictions, etc."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Submit Order Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Message Icon -->
+    <div class="floating-message-icon" id="floatingMessage">
+        <div class="message-icon-circle">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+        <div class="message-popup" id="messagePopup">
+            <a href="tel:+251911129785" class="popup-item">
+                <i class="fas fa-phone"></i>
+                <span>+251 911129785</span>
+            </a>
+            <a href="https://t.me/elvoinbakes" target="_blank" class="popup-item">
+                <i class="fab fa-telegram"></i>
+                <span>Telegram</span>
+            </a>
+            <a href="https://www.tiktok.com/@elvionbakes" target="_blank" class="popup-item">
+                <i class="fab fa-tiktok"></i>
+                <span>@elvionbakes</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3><i class="fas fa-birthday-cake"></i> Elvoin Bakes</h3>
+                    <p>Creating sweet memories since 2025. Premium handcrafted cakes and pastries made with love in Addis Ababa, Ethiopia.</p>
+                    <p><a href="https://maps.google.com/?q=Addis+Ababa+Ethiopia" target="_blank" class="footer-link"><i class="fas fa-map-marker-alt"></i> Addis Ababa, Ethiopia</a></p>
+                    <p><a href="tel:+251911129785" class="footer-link"><i class="fas fa-phone"></i> +251 911129785</a></p>
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@elvionbakes" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://t.me/elvoinbakes" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Info</h4>
+                    <ul>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+
+                        <li><a href="order.html">Place Order</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for special offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elvoin Bakes. All rights reserved. | <span class="designer-link">DESIGNED BY <a href="tel:+251901706471" class="designer-link">NAOL</a> | PHONE: <a href="tel:+251901706471" class="designer-link">+251 901 706471</a></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/* This file contains all the brown color replacements */
+/* Use find and replace in styles.css with these values */
+
+/* Color Variables - Dark Brown Theme */
+:root {
+    --primary-brown: #3d2817;      /* Main dark brown */
+    --secondary-brown: #5c3d2e;    /* Medium brown */
+    --dark-brown: #2a1810;         /* Very dark brown */
+    --penny-brown: #6b4423;        /* Penny brown accent */
+    --light-brown: #8b6f47;        /* Light brown */
+    --cream: #f5e6d3;              /* Cream background */
+    --off-white: #faf6f0;          /* Off white */
+    --white: #ffffff;              /* Pure white */
+    --shadow: 0 10px 40px rgba(61,40,23,0.2);
+    --shadow-hover: 0 20px 60px rgba(61,40,23,0.3);
+}
+
+/* Replace all instances of:
+var(--primary-black) → var(--primary-brown)
+var(--dark-gray) → var(--secondary-brown)
+var(--medium-gray) → var(--light-brown)
+var(--light-gray) → var(--cream)
+#000000 → #3d2817
+rgba(0,0,0 → rgba(61,40,23
+*/

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Elvoin Bakes</title>
+    <link rel="icon" type="image/png" href="https://nait-afk.github.io/check/Screenshot%202025-11-17%20163828.png">
+    <link rel="apple-touch-icon" href="https://nait-afk.github.io/check/Screenshot%202025-11-17%20163828.png">
+    <link rel="mask-icon" href="https://nait-afk.github.io/check/Screenshot%202025-11-17%20163828.png" color="#800020">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="https://nait-afk.github.io/check/Screenshot%202025-11-17%20163828.png" alt="Elvoin Bakes Logo">
+                <span>Elvoin Bakes</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="order.html" class="btn-order">Order Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Get In Touch</h1>
+        <p>We'd Love to Hear From You</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info-side">
+                    <h2>Contact Information</h2>
+                    <p>Have questions? Reach out to us through any of these channels.</p>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt" style="background: var(--penny-brown);"></i>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p><a href="https://maps.google.com/?q=Addis+Ababa+Ethiopia" target="_blank" class="contact-link">Addis Ababa<br>Ethiopia</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone" style="background: var(--penny-brown);"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p><a href="tel:+251911129785" class="contact-link">+251 911129785</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fab fa-telegram" style="background: var(--penny-brown);"></i>
+                        <div>
+                            <h4>Telegram</h4>
+                            <p><a href="https://t.me/elvoinbakes" target="_blank" class="contact-link">@elvoinbakes</a></p>
+                        </div>
+                    </div>
+
+                    <div class="social-contact">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.tiktok.com/@elvionbakes" target="_blank"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://t.me/elvoinbakes" target="_blank"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-side">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xkgverro" method="POST">
+                        <div class="form-group">
+                            <label for="contact-name">Name *</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">Email *</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-phone">Phone</label>
+                            <input type="tel" id="contact-phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject">Subject *</label>
+                            <input type="text" id="contact-subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252230.02028974562!2d38.613328!3d8.9806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Message Icon -->
+    <div class="floating-message-icon" id="floatingMessage">
+        <div class="message-icon-circle">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+        <div class="message-popup" id="messagePopup">
+            <a href="tel:+251911129785" class="popup-item">
+                <i class="fas fa-phone"></i>
+                <span>+251 911129785</span>
+            </a>
+            <a href="https://t.me/elvoinbakes" target="_blank" class="popup-item">
+                <i class="fab fa-telegram"></i>
+                <span>Telegram</span>
+            </a>
+            <a href="https://www.tiktok.com/@elvionbakes" target="_blank" class="popup-item">
+                <i class="fab fa-tiktok"></i>
+                <span>@elvionbakes</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3><i class="fas fa-birthday-cake"></i> Elvoin Bakes</h3>
+                    <p>Creating sweet memories since 2025. Premium handcrafted cakes and pastries made with love in Addis Ababa, Ethiopia.</p>
+                    <p><a href="https://maps.google.com/?q=Addis+Ababa+Ethiopia" target="_blank" class="footer-link"><i class="fas fa-map-marker-alt"></i> Addis Ababa, Ethiopia</a></p>
+                    <p><a href="tel:+251911129785" class="footer-link"><i class="fas fa-phone"></i> +251 911129785</a></p>
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@elvionbakes" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://t.me/elvoinbakes" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Info</h4>
+                    <ul>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+
+                        <li><a href="order.html">Place Order</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for special offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elvoin Bakes. All rights reserved. | <span class="designer-link">DESIGNED BY <a href="tel:+251901706471" class="designer-link">NAOL</a> | PHONE: <a href="tel:+251901706471" class="designer-link">+251 901 706471</a></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
